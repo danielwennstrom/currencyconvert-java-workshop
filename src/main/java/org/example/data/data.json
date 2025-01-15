@@ -1,0 +1,261 @@
+[
+  {
+    "fromBase": "SEK",
+    "displayName": "Swedish Krona",
+    "symbol": "kr",
+    "availableCurrencies": [
+      {
+        "toBase": "EUR",
+        "displayName": "Euro",
+        "symbol": "€",
+        "rateFromBase": 0.0868,
+        "lastUpdated": "2025-01-14T10:12:30"
+      },
+      {
+        "toBase": "USD",
+        "displayName": "US Dollar",
+        "symbol": "$",
+        "rateFromBase": 0.089,
+        "lastUpdated": "2025-01-13T15:45:52"
+      },
+      {
+        "toBase": "GBP",
+        "displayName": "British Pound",
+        "symbol": "£",
+        "rateFromBase": 0.0729,
+        "lastUpdated": "2025-01-14T09:30:25"
+      },
+      {
+        "toBase": "CNY",
+        "displayName": "Chinese Yuan",
+        "symbol": "¥",
+        "rateFromBase": 0.576,
+        "lastUpdated": "2025-01-12T14:55:10"
+      },
+      {
+        "toBase": "JPY",
+        "displayName": "Japanese Yen",
+        "symbol": "¥",
+        "rateFromBase": 13.5,
+        "lastUpdated": "2025-01-14T11:00:00"
+      }
+    ]
+  },
+  {
+    "fromBase": "EUR",
+    "displayName": "Euro",
+    "symbol": "€",
+    "availableCurrencies": [
+      {
+        "toBase": "USD",
+        "displayName": "US Dollar",
+        "symbol": "$",
+        "rateFromBase": 1.1,
+        "lastUpdated": "2025-01-14T12:30:22"
+      },
+      {
+        "toBase": "GBP",
+        "displayName": "British Pound",
+        "symbol": "£",
+        "rateFromBase": 0.85,
+        "lastUpdated": "2025-01-13T17:45:10"
+      },
+      {
+        "toBase": "SEK",
+        "displayName": "Swedish Krona",
+        "symbol": "kr",
+        "rateFromBase": 11.5,
+        "lastUpdated": "2025-01-14T13:35:13"
+      },
+      {
+        "toBase": "CNY",
+        "displayName": "Chinese Yuan",
+        "symbol": "¥",
+        "rateFromBase": 7.8,
+        "lastUpdated": "2025-01-14T08:15:29"
+      },
+      {
+        "toBase": "JPY",
+        "displayName": "Japanese Yen",
+        "symbol": "¥",
+        "rateFromBase": 130,
+        "lastUpdated": "2025-01-12T16:30:52"
+      }
+    ]
+  },
+  {
+    "fromBase": "USD",
+    "displayName": "US Dollar",
+    "symbol": "$",
+    "availableCurrencies": [
+      {
+        "toBase": "EUR",
+        "displayName": "Euro",
+        "symbol": "€",
+        "rateFromBase": 0.91,
+        "lastUpdated": "2025-01-13T12:22:00"
+      },
+      {
+        "toBase": "GBP",
+        "displayName": "British Pound",
+        "symbol": "£",
+        "rateFromBase": 0.77,
+        "lastUpdated": "2025-01-12T10:05:10"
+      },
+      {
+        "toBase": "SEK",
+        "displayName": "Swedish Krona",
+        "symbol": "kr",
+        "rateFromBase": 10.5,
+        "lastUpdated": "2025-01-14T14:30:45"
+      },
+      {
+        "toBase": "CNY",
+        "displayName": "Chinese Yuan",
+        "symbol": "¥",
+        "rateFromBase": 7.1,
+        "lastUpdated": "2025-01-12T09:10:15"
+      },
+      {
+        "toBase": "JPY",
+        "displayName": "Japanese Yen",
+        "symbol": "¥",
+        "rateFromBase": 118.2,
+        "lastUpdated": "2025-01-13T11:52:50"
+      }
+    ]
+  },
+  {
+    "fromBase": "GBP",
+    "displayName": "British Pound",
+    "symbol": "£",
+    "availableCurrencies": [
+      {
+        "toBase": "USD",
+        "displayName": "US Dollar",
+        "symbol": "$",
+        "rateFromBase": 1.3,
+        "lastUpdated": "2025-01-13T15:40:10"
+      },
+      {
+        "toBase": "EUR",
+        "displayName": "Euro",
+        "symbol": "€",
+        "rateFromBase": 1.18,
+        "lastUpdated": "2025-01-14T14:10:30"
+      },
+      {
+        "toBase": "SEK",
+        "displayName": "Swedish Krona",
+        "symbol": "kr",
+        "rateFromBase": 13.7,
+        "lastUpdated": "2025-01-14T09:50:00"
+      },
+      {
+        "toBase": "CNY",
+        "displayName": "Chinese Yuan",
+        "symbol": "¥",
+        "rateFromBase": 9.2,
+        "lastUpdated": "2025-01-12T11:45:20"
+      },
+      {
+        "toBase": "JPY",
+        "displayName": "Japanese Yen",
+        "symbol": "¥",
+        "rateFromBase": 154.5,
+        "lastUpdated": "2025-01-13T13:00:55"
+      }
+    ]
+  },
+  {
+    "fromBase": "CNY",
+    "displayName": "Chinese Yuan",
+    "symbol": "¥",
+    "availableCurrencies": [
+      {
+        "toBase": "USD",
+        "displayName": "US Dollar",
+        "symbol": "$",
+        "rateFromBase": 0.14,
+        "lastUpdated": "2025-01-13T16:40:30"
+      },
+      {
+        "toBase": "EUR",
+        "displayName": "Euro",
+        "symbol": "€",
+        "rateFromBase": 0.13,
+        "lastUpdated": "2025-01-14T12:00:45"
+      },
+      {
+        "toBase": "GBP",
+        "displayName": "British Pound",
+        "symbol": "£",
+        "rateFromBase": 0.11,
+        "lastUpdated": "2025-01-12T10:10:25"
+      },
+      {
+        "toBase": "SEK",
+        "displayName": "Swedish Krona",
+        "symbol": "kr",
+        "rateFromBase": 1.74,
+        "lastUpdated": "2025-01-12T14:30:10"
+      },
+      {
+        "toBase": "JPY",
+        "displayName": "Japanese Yen",
+        "symbol": "¥",
+        "rateFromBase": 17.1,
+        "lastUpdated": "2025-01-13T17:00:10"
+      }
+    ]
+  },
+  {
+    "fromBase": "JPY",
+    "displayName": "Japanese Yen",
+    "symbol": "¥",
+    "availableCurrencies": [
+      {
+        "toBase": "USD",
+        "displayName": "US Dollar",
+        "symbol": "$",
+        "rateFromBase": 0.0085,
+        "lastUpdated": "2025-01-14T10:00:30"
+      },
+      {
+        "toBase": "EUR",
+        "displayName": "Euro",
+        "symbol": "€",
+        "rateFromBase": 0.0077,
+        "lastUpdated": "2025-01-13T18:10:45"
+      },
+      {
+        "toBase": "GBP",
+        "displayName": "British Pound",
+        "symbol": "£",
+        "rateFromBase": 0.0065,
+        "lastUpdated": "2025-01-14T09:30:00"
+      },
+      {
+        "toBase": "SEK",
+        "displayName": "Swedish Krona",
+        "symbol": "kr",
+        "rateFromBase": 0.077,
+        "lastUpdated": "2025-01-14T08:20:00"
+      },
+      {
+        "toBase": "CNY",
+        "displayName": "Chinese Yuan",
+        "symbol": "¥",
+        "rateFromBase": 0.059,
+        "lastUpdated": "2025-01-14T11:10:45"
+      }
+    ]
+  },
+  {
+    "fromBase": "RUB",
+    "displayName": "Russian Ruble",
+    "symbol": "₽",
+    "availableCurrencies": [
+    ]
+  }
+]
