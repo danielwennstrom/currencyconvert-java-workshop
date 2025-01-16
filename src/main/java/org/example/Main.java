@@ -109,7 +109,7 @@ public class Main {
             System.out.println("---");
             return null;
         } else {
-            System.out.printf("Enter currency option to convert %s into: ",
+            System.out.printf("Enter currency option to convert %s into: %n",
                     CurrencyFormatter.formatCurrency(baseCurrency.getSymbol(), amount));
             System.out.println("Available options");
 
