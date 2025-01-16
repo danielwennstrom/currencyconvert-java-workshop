@@ -10,5 +10,4 @@ public class CurrencyFormatter {
 
         return currencyFormat.format(amount);
     }
-
 }

@@ -40,8 +40,8 @@ class MainTest {
     }
 
     @Test
-    @DisplayName("Amount formatting")
-    void formatAmount() {
+    @DisplayName("Amount formatting: decimal values")
+    void formatDecimals() {
         double expected = 1234.56;
         String[] inputs = {
                 "1,234.56",
@@ -50,6 +50,37 @@ class MainTest {
                 "1.234,56",
                 "1 234.56",
                 "1 234,56"
+        };
+
+        for (String input : inputs) {
+            double result = CurrencyAmountParser.formatAmount(input);
+            assertEquals(expected, result, "Failed for input: " + input);
+        }
+    }
+
+    @Test
+    @DisplayName("Amount formatting: single separator values")
+    void formatSingleSeparator() {
+        double expected = 1234;
+        String[] inputs = {
+                "1,234",
+                "1.234"
+        };
+
+        for (String input : inputs) {
+            double result = CurrencyAmountParser.formatAmount(input);
+            assertEquals(expected, result, "Failed for input: " + input);
+        }
+    }
+
+    @Test
+    @DisplayName("Amount formatting: thousands separation")
+    void formatThousands() {
+        double expected = 1234567;
+        String[] inputs = {
+                "1,234,567",
+                "1.234.567",
+                "1 234 567"
         };
 
         for (String input : inputs) {
