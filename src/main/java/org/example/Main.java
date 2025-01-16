@@ -79,7 +79,7 @@ public class Main {
     private static double getAmount(BaseCurrency baseCurrency, Scanner scanner) {
         double amount;
 
-        System.out.printf("Enter the amount to convert from %s:",
+        System.out.printf("Enter the amount to convert from %s:%n",
                 baseCurrency.getFromBase());
 
         try {
