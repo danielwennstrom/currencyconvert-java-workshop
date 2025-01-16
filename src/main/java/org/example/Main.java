@@ -3,9 +3,10 @@ package org.example;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.models.BaseCurrency;
-import org.example.utils.Converter;
+import org.example.utils.CurrencyAmountParser;
+import org.example.utils.CurrencyConverter;
 import org.example.models.TargetCurrency;
-import org.example.utils.Formatter;
+import org.example.utils.CurrencyFormatter;
 
 import java.io.File;
 import java.io.IOException;
@@ -84,7 +85,7 @@ public class Main {
         try {
             scanner.nextLine();
             String amountString = scanner.nextLine();
-            amount = Formatter.formatAmount(amountString);
+            amount = CurrencyAmountParser.formatAmount(amountString);
 
             if (amount <= 0) {
                 System.out.println("The amount can't be negative, try again.");
@@ -109,7 +110,7 @@ public class Main {
             return null;
         } else {
             System.out.printf("Enter currency option to convert %s into: ",
-                    Formatter.formatCurrency(baseCurrency.getSymbol(), amount));
+                    CurrencyFormatter.formatCurrency(baseCurrency.getSymbol(), amount));
             System.out.println("Available options");
 
             for (int i = 0; i < availableCurrencies.size(); i++) {
@@ -139,7 +140,7 @@ public class Main {
 
     private static void convertCurrency(BaseCurrency baseCurrency, double amount, TargetCurrency targetCurrency) {
         System.out.printf("Converting %s to %s, at a rate of %s %s = %s %s as of %s: %n",
-                Formatter.formatCurrency(baseCurrency.getSymbol(), amount),
+                CurrencyFormatter.formatCurrency(baseCurrency.getSymbol(), amount),
                 targetCurrency.getSymbol(),
                 "1",
                 baseCurrency.getFromBase(),
@@ -147,8 +148,8 @@ public class Main {
                 targetCurrency.getToBase(),
                 targetCurrency.getFormattedLastUpdated());
 
-        double convertedAmount = Converter.convertCurrency(amount, targetCurrency.getRateFromBase());
-        System.out.printf("%s%n", Formatter.formatCurrency(targetCurrency.getSymbol(), convertedAmount));
+        double convertedAmount = CurrencyConverter.convertCurrency(amount, targetCurrency.getRateFromBase());
+        System.out.printf("%s%n", CurrencyFormatter.formatCurrency(targetCurrency.getSymbol(), convertedAmount));
         System.out.println("---");
     }
 }

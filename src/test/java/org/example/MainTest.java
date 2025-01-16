@@ -5,8 +5,10 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.models.BaseCurrency;
 import org.example.models.TargetCurrency;
-import org.example.utils.Converter;
-import org.example.utils.Formatter;
+import org.example.utils.CurrencyAmountParser;
+import org.example.utils.CurrencyConverter;
+import org.example.utils.CurrencyFormatter;
+import org.example.utils.CurrencyLocaleHelper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -23,14 +25,14 @@ class MainTest {
         double amount = 100;
         double rate = 0.089;
 
-        assertEquals(8.9, Converter.convertCurrency(amount, rate));
+        assertEquals(8.9, CurrencyConverter.convertCurrency(amount, rate));
     }
 
     @Test
     @DisplayName("Currency formatting")
     void formatCurrency() {
-        String resultA = Formatter.formatCurrency("kr", 1234.56);
-        String resultB = Formatter.formatCurrency("$", 1234.56);
+        String resultA = CurrencyFormatter.formatCurrency("kr", 1234.56);
+        String resultB = CurrencyFormatter.formatCurrency("$", 1234.56);
 
         assertAll(
                 () -> assertEquals("1 234,56 kr", resultA.replace('\u00A0', ' ')),
@@ -51,7 +53,7 @@ class MainTest {
         };
 
         for (String input : inputs) {
-            double result = Formatter.formatAmount(input);
+            double result = CurrencyAmountParser.formatAmount(input);
             assertEquals(expected, result, "Failed for input: " + input);
         }
     }
@@ -140,14 +142,14 @@ class MainTest {
                 .build();
 
         assertAll(
-                () -> assertEquals(Locale.US, Formatter.getLocaleForCurrencySymbol("$")),
-                () -> assertEquals(se, Formatter.getLocaleForCurrencySymbol("kr"))
+                () -> assertEquals(Locale.US, CurrencyLocaleHelper.getLocaleForCurrencySymbol("$")),
+                () -> assertEquals(se, CurrencyLocaleHelper.getLocaleForCurrencySymbol("kr"))
         );
     }
 
     @Test
     @DisplayName("Get unsupported currency symbol")
     public void getUnsupportedSymbol() {
-        assertThrows(IllegalArgumentException.class, () -> Formatter.getLocaleForCurrencySymbol("Kč"));
+        assertThrows(IllegalArgumentException.class, () -> CurrencyLocaleHelper.getLocaleForCurrencySymbol("Kč"));
     }
 }
